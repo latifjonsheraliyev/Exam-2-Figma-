@@ -1,0 +1,42 @@
+.why-us {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  background-color: #166d6b;
+
+  .why-us-content {
+    background-color: #166d6b;
+    color: white;
+
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    h2 {
+      font-size: 24px;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+  }
+
+  .why-us-image {
+    background-image: url("../../img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .why-us {
+   display: none;
+  }
+}
+
+

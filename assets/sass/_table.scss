@@ -1,0 +1,174 @@
+.responsive_table{
+  display: none;
+}
+
+.tables {
+  padding: 50px !important;
+  background-color: #0b7572;
+  margin-top: 150px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  color: black;
+  .tables_text {
+    h2 {
+      color: white;
+      font-family: var(--font-family);
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 125%;
+      width: 50%;
+      margin-bottom: 20px;
+    }
+  }
+  .table_about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(234, 234, 234);
+  }
+  .table {
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px;
+    position: relative;
+    margin-right: 20px;
+
+    p {
+      color: grey;
+      font-size: 10px;
+      width: 40%;
+    }
+  }
+}
+
+.border_right {
+  border-right: 1px solid gray;
+}
+.border_full {
+  border: 1px solid gray;
+}
+.bor_bottom {
+  border-bottom: 1px solid gray;
+}
+.right_none {
+  border-right: none;
+}
+.icon{
+  margin-top: 20px !important;
+}
+.responsive_table{
+  border-radius: 5px;
+  padding: 20px;
+  width: 100%;
+  color: black;
+  button{
+    margin-top: 27px !important;
+    margin-bottom: 30px !important;
+    padding: 5% 40%;
+    background-color: #0b7572;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    text-align: start;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  background-color: white;
+  .texnic{
+  display: flex;
+  gap: 20px;
+}
+.aloqa{
+  margin-top: 30px;
+}
+}
+
+@media(max-width:1028px){
+  .tables{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(max-width:650px){
+  .table{
+    display: none;
+  }
+  .responsive_table{
+    display: block;
+  }
+.tables_text{
+  h2{
+    font-size: 30px !important;
+    width: 100% !important;
+  }
+}
+}
+
+@media(max-width:450px){
+  
+  .responsive_table{
+    display: block;
+
+    p{
+      font-size: 12px !important;
+    }
+    img{
+      width: 20%;
+    }
+    .icon{
+      font-size: 12px ;
+    }
+    .aloqa{
+      font-size: 12px;
+    }
+  }
+
+}
+
+
+/* Make sure the table borders are collapsed */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1em;
+  min-width: 400px;
+  border: 1px solid #e0e0e0; /* Light gray border for the entire table */
+}
+
+/* Header row styling */
+thead tr {
+  background-color: #31725C; /* Dark green background */
+  color: white; /* White text for header */
+  text-align: left;
+}
+
+/* Header cell styling */
+thead th {
+  padding: 12px 15px;
+  border: 1px solid #e0e0e0;
+}
+
+/* Table cell styling */
+tbody td {
+  padding: 12px 15px;
+  border: 1px solid #e0e0e0; /* Gray border between cells */
+}
+
+/* Alternating row background for clarity */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Light gray for even rows */
+}
+
+/* Optional: Add hover effect for rows */
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Add some padding for the overall container */
+.container {
+  padding: 20px;
+}

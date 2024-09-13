@@ -1,0 +1,132 @@
+.footer {
+  margin-top: 100px;
+  background-color: #166d6b;
+  padding: 20px;
+  color: white;
+  font-family: Arial, sans-serif;
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .footer-logo {
+      img{
+        width: 200px;
+      }
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: space-between;
+      gap: 100px;
+      ul {
+        margin: 0 20px;
+        list-style: none;
+        padding: 0;
+        
+        li {
+          margin-bottom: 10px;
+
+          a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    .footer-contact {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .social-icons {
+        display: flex;
+        margin-bottom: 10px;
+
+        a {
+          margin-right: 10px;
+          img {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+
+      p {
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+
+      .consult-btn {
+        background-color: #ffa429;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        font-size: 14px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        span {
+          margin-left: 10px;
+        }
+
+        &:hover {
+          background-color: #ff8e00;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+
+    .footer-links {
+      flex-direction: column;
+      align-items: center;
+      ul {
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 280px) {
+  .footer-logo h2 {
+    font-size: 20px;
+  }
+  
+  .footer-links ul li a {
+    font-size: 12px;
+  }
+
+  .footer-contact p,
+  .footer-contact .consult-btn {
+    font-size: 12px;
+  }
+
+  .footer-contact .consult-btn {
+    padding: 8px 16px;
+  }
+
+  .footer-bottom {
+    font-size: 10px;
+  }
+}

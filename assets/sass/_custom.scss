@@ -1,0 +1,99 @@
+.custom {
+  margin-top: 100px;
+  h2 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 135%;
+  }
+  .p {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    width: 50%;
+  }
+  &_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+    .custom_card {
+      box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.12);
+      border-radius: 10px;
+      padding-bottom: 15px;
+
+      img {
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      h3 {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 135%;
+        margin-left: 20px;
+        margin-right: 30px;
+      }
+      p {
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        margin-left: 20px;
+        margin-right: 30px;
+      }
+      .a {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 135%;
+        display: block;
+        width: 90px;
+        transition: 0.4s;
+      }
+      .a:hover {
+        border-bottom: 3px solid chocolate;
+       
+      }
+    }
+
+  }
+}
+
+@media(max-width:1028px){
+  .custom{
+    h2{
+      width: 100%;
+    }
+    .p{
+      width: 80%;
+    }
+  .custom_grid{
+    grid-template-columns: 1fr;
+    .delete1{
+      display: none;
+    }
+  }
+}
+}
+
+@media(max-width:600px){
+  .custom{
+    h2{
+      margin-top: 150px;
+      width: 100%;
+      font-size: 28px;
+    }
+    .p{
+      width: 100%;
+      font-size: 15px;
+    }
+  .custom_grid{
+    .delete2{
+      display: none;
+    }
+  }
+}
+}

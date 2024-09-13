@@ -1,0 +1,58 @@
+.report {
+    margin-top: 50px;
+  &_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+
+    .report_card {
+      display: grid;
+      grid-template-columns: 20% 80%;
+      align-items: center;
+      margin-top: 40px;
+
+      
+      h2 {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 135%;
+      }
+      p {
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+      }
+    }
+  }
+}
+
+@media(max-width:1028px){
+     .report{
+        &_grid{
+            grid-template-columns: 1fr;
+            padding: 50px; 
+            .report_card{
+                grid-template-columns: 20% 80%;
+                gap: 10px;
+                h2{
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+     }
+}
+
+@media (max-width:700px){
+    .report_grid{
+        padding: 0;
+
+        img{
+        width: 100%;
+      }
+    }
+}
